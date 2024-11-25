@@ -1,0 +1,287 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* nav bar styling */
+#nav {
+  background-color: rgb(248, 218, 249);
+  text-align: center;
+}
+
+#nav li:hover {
+  background-color: #7c7c7c;
+  color: white;
+}
+
+#nav li {
+  display: inline-block;
+  position: relative;
+}
+
+#nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+
+#nav ul ul {
+  display: none;
+  position: absolute;
+}
+
+/* btn styling */
+.btn-stock, .btn-dogs {
+  background-color: transparent;
+  border: 1px solid #d963a0;
+  box-sizing: border-box;
+  color: #2c0023;
+  font-family: "Avenir Next LT W01 Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.btn-stock:hover, .btn-dogs:hover {
+  background-color: transparent;
+}
+
+.btn-stock:before, .btn-dogs:before {
+  background-color: #f3d5f6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.btn-stock:hover:before, .btn-dogs:hover:before {
+  background-color: #c93e8f;
+}
+
+@media (min-width: 768px) {
+  .btn-stock, .btn-dogs {
+      padding: 16px 32px;
+  }
+}
+
+/* btn container styling */
+.button-container, .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* quote container styling */
+
+.quote-container {
+  background-color: rgb(229, 229, 225);
+  color: black;
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  text-align: center; 
+}
+
+.quote-text {
+  color: black;
+}
+
+/* audio feature styling */
+.audio-container {
+  background-color: rgb(108, 14, 95);
+  color: rgb(221, 221, 221);
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  margin-top: 2;
+  border: 2px solid black;
+}
+
+.audio-container h2 {
+  text-align: center;
+}
+
+/* turn on/off btn styling */
+.turn-on, .turn-off {
+  align-items: center;
+  background-color: #b6b6b6;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.turn-on:after, .turn-off:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.turn-on:hover:after, .turn-off:hover:after {
+  transform: translate(0, 0);
+}
+
+.turn-on:active, .turn-off:active {
+  background-color: #ffdeda;
+}
+
+/* stock page styling */
+
+/* look up btn styling */
+.lookUpBtn {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.lookUpBtn:hover,
+.lookUpBtn:focus {
+  background-color: #F082AC;
+}
+
+/* stock table styling */
+
+#stockTable {
+  width: 40%;
+  margin-top: 20px;
+}
+
+#stockTable th,
+#stockTable td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 2px;
+}
+
+#stockTable a {
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#stockTable th {
+  font-weight: bold;
+}
+
+/* dog page styling */
+
+/* carousel styling */
+
+div[data-simple-slider] {
+  width: 612px; 
+  height: 612px; 
+  margin: auto;
+}
+
+/* btn, detail/info, for dog breed styling */
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.details-container {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.breed-button {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  margin: auto;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.breed-button:hover {
+  background-color: #fff;
+}
+
+.breed-button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .breed-button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
