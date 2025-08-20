@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Dogs Page</title>
+    <link rel="stylesheet" href="Assignment2-CSS.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="Dogs-JS.js" defer></script>
+</head>
+
+<body class="pages">
+    <h1>INST377 - Activities</h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Stock_Page.html">Stocks</a></li>
+            <li><a href="Dogs_Page.html">Dogs</a></li>
+        </ul>
+    </nav>
+    <h1>Doggos!</h1>
+    <div data-simple-slider></div>
+    <div id="button-container" class="button-container"></div>
+    <div id="details-container" class="details-container" style="display: none;"></div>
+    <div class="audio-container">
+        <h2>In this web page there are options to Navigate using Audio!</h2>
+        <p>Ensure your Mic is enabled to be able to use this feature</p>
+        <ul>
+            <li>Load Dog Breed</li>
+            <ul>
+                <li>Say:<strong> Load Dog Breed &lt;Dog Breed Name&gt;</strong></li>
+            </ul>
+            <li>Navigate to a Different Page</li>
+            <ul>
+                <li>Say:<strong> Navigate to &lt;page&gt;</strong></li>
+            </ul>
+            <li>Change the Page color</li>
+            <ul>
+                <li>Say:<strong> Change the color to &lt;color&gt;</strong></li>
+            </ul>
+            <li>Say Hello back to you!</li>
+            <ul>
+                <li>Say:<strong> Hello</strong></li>
+            </ul>
+        </ul>
+        <div class="btn-container">
+            <button class="turn-on" role="button">Turn On Listening</button>
+            <button class="turn-off" role="button">Turn Off Listening</button>
+        </div>
+    </div>
+</body>
+
+</html>
